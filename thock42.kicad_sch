@@ -5,7 +5,7 @@
 	(uuid "0467994f-409b-4faa-972c-460935ac1649")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x04_Socket"
+		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -19,8 +19,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Socket"
-				(at 0 -7.62 0)
+			(property "Value" "Conn_01x03_Socket"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -45,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,35 +80,11 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_Socket_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_01x03_Socket_1_1"
 				(arc
 					(start 0 -2.032)
 					(mid -0.5058 -2.54)
 					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -224,24 +200,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1245,6 +1203,10 @@
 		(uuid "f943c317-3a90-40a8-93c1-6584b79ee598")
 	)
 	(no_connect
+		(at 257.81 55.88)
+		(uuid "3c03ce5a-c02d-448a-8148-3e3cc726e399")
+	)
+	(no_connect
 		(at 232.41 71.12)
 		(uuid "53a5acd6-8d10-4853-b496-28bb884aafa1")
 	)
@@ -1294,16 +1256,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 92.71) (xy 52.07 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "178f797d-1381-4e93-a7d1-d753a279f8d8")
-	)
-	(wire
-		(pts
 			(xy 137.16 81.28) (xy 137.16 105.41)
 		)
 		(stroke
@@ -1311,16 +1263,6 @@
 			(type default)
 		)
 		(uuid "1910adcd-6f92-484f-a333-ce48cf491262")
-	)
-	(wire
-		(pts
-			(xy 45.72 69.85) (xy 52.07 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2077b788-8d9a-45c1-bb83-1d72920ee94f")
 	)
 	(wire
 		(pts
@@ -1371,16 +1313,6 @@
 			(type default)
 		)
 		(uuid "2bd8df01-b73d-4779-85c5-149e99f0873a")
-	)
-	(wire
-		(pts
-			(xy 45.72 116.84) (xy 52.07 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d224eaf-c4a9-4e28-b5e6-193657536cd0")
 	)
 	(wire
 		(pts
@@ -1454,6 +1386,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 69.85) (xy 52.07 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "469b837f-e327-4dae-ae2e-e73c63d99fdc")
+	)
+	(wire
+		(pts
 			(xy 185.42 128.27) (xy 185.42 130.81)
 		)
 		(stroke
@@ -1521,6 +1463,16 @@
 			(type default)
 		)
 		(uuid "60cfde2c-0ed8-4587-a20a-1528faa0cb6e")
+	)
+	(wire
+		(pts
+			(xy 27.94 138.43) (xy 130.81 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64cf6e21-ac00-488a-aabd-dc5fc7582f40")
 	)
 	(wire
 		(pts
@@ -1794,6 +1746,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 116.84) (xy 52.07 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b469e928-dc8d-4e7a-95e0-e5d93c9e7222")
+	)
+	(wire
+		(pts
 			(xy 52.07 81.28) (xy 52.07 85.09)
 		)
 		(stroke
@@ -1944,16 +1906,6 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 138.43) (xy 130.81 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddf27346-4ed0-4c30-9be7-3de38a2ba093")
-	)
-	(wire
-		(pts
 			(xy 137.16 49.53) (xy 137.16 58.42)
 		)
 		(stroke
@@ -2044,6 +1996,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 92.71) (xy 52.07 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1bfdb19-ae4b-46c3-9a96-912137732563")
+	)
+	(wire
+		(pts
 			(xy 58.42 81.28) (xy 58.42 105.41)
 		)
 		(stroke
@@ -2114,28 +2076,6 @@
 			)
 		)
 	)
-	(global_label "3V3"
-		(shape input)
-		(at 237.49 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "03d9d860-d8c9-4a37-81a9-0e8f53030c7b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.9972 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ROW3"
 		(shape input)
 		(at 232.41 60.96 180)
@@ -2149,6 +2089,28 @@
 		(uuid "0591a239-856b-44fa-a146-89151549f941")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 224.1634 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GP0"
+		(shape input)
+		(at 234.95 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06d1f97a-677a-4b1b-90e6-eb315ba81b54")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.2153 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2224,28 +2186,6 @@
 			)
 		)
 	)
-	(global_label "JST_SDA"
-		(shape input)
-		(at 257.81 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "23329bd1-b8f7-4319-836e-f9efb86210cb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.4756 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ROW1"
 		(shape input)
 		(at 232.41 68.58 180)
@@ -2290,53 +2230,9 @@
 			)
 		)
 	)
-	(global_label "JST_SDC"
-		(shape input)
-		(at 237.49 137.16 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "465af634-5d65-413b-a44e-d465b158a96d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.643 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "JST_SDC"
-		(shape input)
-		(at 257.81 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "54cdc50a-b5c3-48c4-a56d-444dc4acbd78")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.657 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ROW0"
 		(shape input)
-		(at 45.72 69.85 180)
+		(at 27.94 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2346,7 +2242,7 @@
 		)
 		(uuid "60864b06-ef89-4e30-bfba-f0af7fc6e00d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.4734 69.85 0)
+			(at 19.6934 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2356,9 +2252,9 @@
 			)
 		)
 	)
-	(global_label "JST_SDA"
+	(global_label "GND"
 		(shape input)
-		(at 237.49 134.62 180)
+		(at 234.95 124.46 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2366,9 +2262,9 @@
 			)
 			(justify right)
 		)
-		(uuid "7e350897-2203-4482-9bd6-84d037f00aac")
+		(uuid "650e2da0-c7d7-4332-9331-2b2e00a14575")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 226.8244 134.62 0)
+			(at 228.0943 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,6 +2287,28 @@
 		(uuid "823edde0-702b-48e6-9ddf-0c9931f903d3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 225.1915 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape input)
+		(at 234.95 127 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "83b34506-eaeb-4f55-b7cf-986be6996a90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.4572 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2424,7 +2342,7 @@
 	)
 	(global_label "ROW2"
 		(shape input)
-		(at 45.72 116.84 180)
+		(at 27.94 116.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2434,7 +2352,7 @@
 		)
 		(uuid "935b3569-560e-46d4-bf4b-fb3111a0a8af")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.4734 116.84 0)
+			(at 19.6934 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,7 +2386,7 @@
 	)
 	(global_label "ROW3"
 		(shape input)
-		(at 45.72 138.43 180)
+		(at 27.94 138.43 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2478,7 +2396,7 @@
 		)
 		(uuid "9bd671e7-3ab9-4d5c-8645-f5f7587e825c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.4734 138.43 0)
+			(at 19.6934 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,9 +2560,31 @@
 			)
 		)
 	)
+	(global_label "GP0"
+		(shape input)
+		(at 257.81 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d47f7031-11b3-483f-8221-3c04df751fe7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.5447 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ROW1"
 		(shape input)
-		(at 45.72 92.71 180)
+		(at 27.94 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2654,7 +2594,7 @@
 		)
 		(uuid "d962621a-32dd-4832-bc56-dd6da2a798e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.4734 92.71 0)
+			(at 19.6934 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2818,28 +2758,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape input)
-		(at 237.49 129.54 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fa3f2103-7e2a-4a8b-b1ec-b79e10fb601e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.6343 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "kbd:SW_PUSH")
 		(at 144.78 58.42 0)
@@ -2899,7 +2817,7 @@
 			(uuid "a8beb9f2-2d67-4752-b46c-7473217d9853")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW5")
 					(unit 1)
@@ -2987,7 +2905,7 @@
 			(uuid "cae68641-34ce-449f-aed4-19b9664ad53a")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D17")
 					(unit 1)
@@ -3054,7 +2972,7 @@
 			(uuid "b4d94db3-7638-4f0e-97ff-afa1c9bda885")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW8")
 					(unit 1)
@@ -3121,7 +3039,7 @@
 			(uuid "cb7015bb-c217-40ab-8e78-98f2735c00bd")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW10")
 					(unit 1)
@@ -3209,7 +3127,7 @@
 			(uuid "0bdd2637-7c63-4135-9d30-71a764edf65f")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D5")
 					(unit 1)
@@ -3297,7 +3215,7 @@
 			(uuid "c4b3fdf9-f928-4189-a36d-8b18994ff50f")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D8")
 					(unit 1)
@@ -3385,7 +3303,7 @@
 			(uuid "530c2571-8ca0-4edc-9d58-f2210eb45731")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D12")
 					(unit 1)
@@ -3452,7 +3370,7 @@
 			(uuid "5980b7c7-7c63-44c9-92d8-71a89e58a43e")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW12")
 					(unit 1)
@@ -3540,7 +3458,7 @@
 			(uuid "3630c7c8-ee18-4724-9d92-06dc396f5d97")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D11")
 					(unit 1)
@@ -3628,7 +3546,7 @@
 			(uuid "b84c46e7-4533-4a19-8190-bf400ba3f396")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D2")
 					(unit 1)
@@ -3716,7 +3634,7 @@
 			(uuid "3c37d281-92a8-4b58-9151-999e3e509d43")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D4")
 					(unit 1)
@@ -3783,7 +3701,7 @@
 			(uuid "5035354b-c813-4da3-b2ca-b7a2046f3080")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW18")
 					(unit 1)
@@ -3850,85 +3768,9 @@
 			(uuid "8d18b791-d5f7-45a9-a7e8-336c82f58433")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 242.57 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ebe2bce-83ef-4dbc-a89d-1d18d74cc499")
-		(property "Reference" "JST_4pin1"
-			(at 243.84 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 243.84 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal"
-			(at 242.57 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 242.57 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 242.57 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7ff0f1f8-34a3-479e-a048-d98208877944")
-		)
-		(pin "1"
-			(uuid "903e228b-1c40-4ae2-94f0-279c49674aec")
-		)
-		(pin "3"
-			(uuid "90d47623-9710-4340-87fd-c78c5789c483")
-		)
-		(pin "4"
-			(uuid "d1a00e4f-97a2-4fac-ad5b-156c2c0c8891")
-		)
-		(instances
-			(project "keyboard"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "JST_4pin1")
 					(unit 1)
 				)
 			)
@@ -3993,7 +3835,7 @@
 			(uuid "129e6833-a8a7-4ac7-9222-f16556b7f7ac")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW4")
 					(unit 1)
@@ -4060,7 +3902,7 @@
 			(uuid "6d89ea28-7a32-4d8a-8200-d317271248e9")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW21")
 					(unit 1)
@@ -4127,7 +3969,7 @@
 			(uuid "8154b48e-a832-4cc4-a1af-bd14258bbd03")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW11")
 					(unit 1)
@@ -4215,7 +4057,7 @@
 			(uuid "8b6ab46a-ac01-4886-a5d9-5b11593ccc7f")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D21")
 					(unit 1)
@@ -4303,7 +4145,7 @@
 			(uuid "85542e47-3df5-4bf2-89f0-f1fb7ff51a5b")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D1")
 					(unit 1)
@@ -4391,7 +4233,7 @@
 			(uuid "68b280c5-1398-4031-941d-df180daba4b1")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D10")
 					(unit 1)
@@ -4458,7 +4300,7 @@
 			(uuid "14448cb0-d711-474a-9031-53d8488d6a13")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW19")
 					(unit 1)
@@ -4546,7 +4388,7 @@
 			(uuid "b59544c8-5f8a-4eaf-b778-f15ddb99d1b3")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D14")
 					(unit 1)
@@ -4613,7 +4455,7 @@
 			(uuid "be255033-0967-4cf2-aad2-7aea2c59fe60")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW20")
 					(unit 1)
@@ -4701,7 +4543,7 @@
 			(uuid "bfea90aa-de7c-4f37-aa56-864216fef0ad")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D9")
 					(unit 1)
@@ -4768,7 +4610,7 @@
 			(uuid "a23d13cc-ab99-4fd5-8607-340ed5cdd545")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW3")
 					(unit 1)
@@ -4856,7 +4698,7 @@
 			(uuid "c1d8b790-d627-4f53-b864-ca5140bc6180")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D15")
 					(unit 1)
@@ -4923,7 +4765,7 @@
 			(uuid "7845def4-b984-4b6a-b98d-7c08ff609589")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW15")
 					(unit 1)
@@ -4990,7 +4832,7 @@
 			(uuid "dfeb734a-bf78-4d4e-a3d5-0a552cbd7ca8")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW13")
 					(unit 1)
@@ -5078,7 +4920,7 @@
 			(uuid "85f8b2fd-3ac2-4181-b2dd-68ab4d3bb6b0")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D13")
 					(unit 1)
@@ -5145,7 +4987,7 @@
 			(uuid "f6a2a0fb-2c46-4580-9c83-2fb9124b1ebf")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW2")
 					(unit 1)
@@ -5212,7 +5054,7 @@
 			(uuid "946409a7-48f3-4704-96d9-ea186d62926e")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW14")
 					(unit 1)
@@ -5288,7 +5130,7 @@
 			(uuid "dbacc2e3-606b-4000-b308-8d0ab2bee459")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "J1")
 					(unit 1)
@@ -5376,7 +5218,7 @@
 			(uuid "f2ee0331-8fc0-42a2-96da-786b4e511ccd")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D7")
 					(unit 1)
@@ -5464,7 +5306,7 @@
 			(uuid "13f86332-94e1-435d-901d-dfa87b4d3f4c")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D18")
 					(unit 1)
@@ -5552,7 +5394,7 @@
 			(uuid "fa0003d8-13f6-4ead-b20e-9a01a692922d")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D20")
 					(unit 1)
@@ -5640,7 +5482,7 @@
 			(uuid "9e9c4a72-1fde-45c1-89ad-1ca1a376dd3f")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D6")
 					(unit 1)
@@ -5707,9 +5549,82 @@
 			(uuid "ee731738-de6d-4de3-8336-0c76e532aad8")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 240.03 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc83f959-9edb-4dfc-a875-c8abd4b481af")
+		(property "Reference" "JST_3PIN1"
+			(at 241.3 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 241.3 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal"
+			(at 240.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 240.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c55f667d-ac87-4c6c-9a78-300726e3b3c7")
+		)
+		(pin "2"
+			(uuid "9f2a0baa-d636-4836-84fd-40335aa1919a")
+		)
+		(pin "3"
+			(uuid "2b4cc89f-3542-48a8-8896-72fff120a2f9")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "JST_3PIN1")
 					(unit 1)
 				)
 			)
@@ -5774,7 +5689,7 @@
 			(uuid "65679017-42bc-4e26-8cba-b4f137b639aa")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW9")
 					(unit 1)
@@ -5841,7 +5756,7 @@
 			(uuid "2a2ef2ce-7b35-4a1a-835d-de1e7593f776")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW1")
 					(unit 1)
@@ -5908,7 +5823,7 @@
 			(uuid "c39baa62-2284-416a-a273-2bc62de9072e")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW17")
 					(unit 1)
@@ -5996,7 +5911,7 @@
 			(uuid "064af957-c661-4b6f-800a-8afa2c147b55")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D19")
 					(unit 1)
@@ -6084,7 +5999,7 @@
 			(uuid "18ed8b71-28fd-44ce-83e9-b17e3887cd87")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D3")
 					(unit 1)
@@ -6200,7 +6115,7 @@
 			(uuid "d7e35999-1399-4f70-bfdd-cdc0cc885d01")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "U1")
 					(unit 1)
@@ -6267,7 +6182,7 @@
 			(uuid "d73fc1e1-0770-4d4e-8d8e-bc95c6247416")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW7")
 					(unit 1)
@@ -6355,7 +6270,7 @@
 			(uuid "bc3a055a-6bda-40f8-8c92-97fae7bdccd7")
 		)
 		(instances
-			(project "keyboard"
+			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "D16")
 					(unit 1)
