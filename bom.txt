@@ -1,0 +1,13 @@
+PCB | from jlcpcb.com | ~£20
+switches | https://mechboards.co.uk/products/sunset-tactile-choc-switches?_pos=1&_sid=e8d02ca5b&_ss=r | £37.5
+oled | https://mechboards.co.uk/products/oled-screen?_pos=1&_sid=114f0a543&_ss=r | £3.50
+standoffs | https://mechboards.co.uk/products/m2-standoffs?variant=40295523057869 | ~£5
+diodes | https://mechboards.co.uk/products/throughhole-diodes?variant=41360419193037 | £2.50
+mill max sockets | https://www.mouser.co.uk/ProductDetail/Mill-Max/315-43-112-41-003000?qs=s8Nb1z4Wn%2FRfWrVqQ0TOuQ%3D%3D | £12.50
+jst | https://www.mouser.co.uk/ProductDetail/SparkFun/PRT-09750?qs=WyAARYrbSnYyeGRQmiKgMQ%3D%3D | £1
+cirque | https://www.mouser.co.uk/ProductDetail/Cirque/TM040040-2024-302?qs=wd5RIQLrsJgMzmw571gvDw%3D%3D | £7
+MCUs | https://keebd.com/en-gb/products/rp2040-zero-controller?_pos=1&_psq=rp2040&_ss=e&_v=1.0 | £12
+keycaps | https://keebd.com/en-gb/products/cfx-low-profile-keycaps?variant=41980866101400 | £20
+mill max pins | https://keebd.com/en-gb/products/mill-max-low-profile-controller-pins-pack-of-25?_pos=3&_sid=48211df58&_ss=r | £6
+choc sockets | https://keebd.com/en-gb/products/kailh-hot-swappable-low-profile-1350-pcb-socket-pack-of-10?_pos=2&_sid=7ce89527d&_ss=r | £10
+pinecil | https://keebd.com/en-gb/products/pinecil-smart-portable-soldering-iron?_pos=1&_sid=5bf0669ec&_ss=r | £32
