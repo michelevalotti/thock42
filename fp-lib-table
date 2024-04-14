@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "thock42")(type "KiCad")(uri "${KIPRJMOD}/thock42.pretty")(options "")(descr ""))
+)

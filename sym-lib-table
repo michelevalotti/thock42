@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "thock42")(type "KiCad")(uri "${KIPRJMOD}/thock42.kicad_sym")(options "")(descr ""))
+)
