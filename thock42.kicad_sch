@@ -371,7 +371,152 @@
 				)
 			)
 		)
-		(symbol "display_kleeb:OLED-128x32"
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "thock42:OLED-128x32"
 			(pin_names
 				(offset 1.016)
 			)
@@ -509,23 +654,23 @@
 				)
 			)
 		)
-		(symbol "kbd:SW_PUSH"
-			(pin_numbers hide)
+		(symbol "thock42:rp2040-zero_nobtm"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 3.81 2.794 0)
+			(property "Reference" "U"
+				(at 0 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SW_PUSH"
-				(at 0 -2.032 0)
+			(property "Value" "rp2040-zero_nobtm"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -533,116 +678,6 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_PUSH_0_1"
-				(rectangle
-					(start -4.318 1.27)
-					(end 4.318 1.524)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.524) (xy -0.762 2.286) (xy 0.762 2.286) (xy 1.016 1.524)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive inverted
-					(at -7.62 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive inverted
-					(at 7.62 0 180)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "mcu_kleeb:rp2040-zero"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U1"
-				(at 0 16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "rp2040-zero"
-				(at 0 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "mcu_kleeb:rp2040-zero-tht_nobtm_reversible"
 				(at -8.89 5.08 0)
 				(effects
 					(font
@@ -669,7 +704,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "rp2040-zero_0_1"
+			(symbol "rp2040-zero_nobtm_0_1"
 				(rectangle
 					(start -10.16 11.43)
 					(end 10.16 -13.97)
@@ -682,7 +717,7 @@
 					)
 				)
 			)
-			(symbol "rp2040-zero_1_1"
+			(symbol "rp2040-zero_nobtm_1_1"
 				(pin bidirectional line
 					(at 12.7 8.89 180)
 					(length 2.54)
@@ -1011,12 +1046,6 @@
 		)
 	)
 	(junction
-		(at 58.42 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0c3725c8-b7fd-4133-a04c-3ee7b32f3fb0")
-	)
-	(junction
 		(at 157.48 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1029,16 +1058,28 @@
 		(uuid "116af724-a413-40f4-88b4-44ac18eed8c9")
 	)
 	(junction
+		(at 38.1 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b68d49d-b04d-40bb-8519-ccbb15534871")
+	)
+	(junction
 		(at 157.48 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c5096de-f405-4f9b-8cc6-de3d6d4b8f50")
 	)
 	(junction
-		(at 110.49 105.41)
+		(at 142.24 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "29364257-394a-41e1-bd6e-d08ccebd2006")
+		(uuid "1c7fdb45-57bc-433d-88c7-bf05a1736e82")
+	)
+	(junction
+		(at 168.91 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28a0faea-d69f-4906-b862-43099dbc3daa")
 	)
 	(junction
 		(at 130.81 69.85)
@@ -1047,10 +1088,16 @@
 		(uuid "2b003db8-daea-4bdc-9daf-49d95d73a285")
 	)
 	(junction
-		(at 110.49 58.42)
+		(at 63.5 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2cfd01b4-ad3b-4922-9dee-90209d739b07")
+		(uuid "2e82d0d1-443f-43cd-ad4a-78cc979618e4")
+	)
+	(junction
+		(at 115.57 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b7e7bb5-6706-467d-a4dd-95c7df499347")
 	)
 	(junction
 		(at 104.14 92.71)
@@ -1059,16 +1106,22 @@
 		(uuid "3bbd92cd-71e4-4ce0-a364-1368329792eb")
 	)
 	(junction
-		(at 33.02 81.28)
+		(at 115.57 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4cf6ba7e-53ee-4189-a5f1-4c153592364f")
+		(uuid "49af531d-e2ab-463c-8b18-0c97a67c8f02")
 	)
 	(junction
-		(at 33.02 58.42)
+		(at 63.5 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "575a81a5-0d63-419e-ac7c-fc23faa4ccdf")
+		(uuid "4a39671e-3672-4fb5-a79b-13197bafb9c1")
+	)
+	(junction
+		(at 168.91 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4efc83df-8900-4384-8ba3-f3222600a75e")
 	)
 	(junction
 		(at 130.81 138.43)
@@ -1083,6 +1136,12 @@
 		(uuid "762d3a4c-0682-4ddc-94ae-5a738ff7cc95")
 	)
 	(junction
+		(at 142.24 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76a3c1f7-45ce-4e50-90e3-82778d294724")
+	)
+	(junction
 		(at 52.07 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1095,28 +1154,16 @@
 		(uuid "81a2cabc-0ebf-44a2-96fc-79a1cf4f223e")
 	)
 	(junction
-		(at 110.49 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85f444f8-c203-4f3c-bc49-6169b702793a")
-	)
-	(junction
-		(at 137.16 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "961bdaaa-431c-493a-8f46-fc66dd7eed27")
-	)
-	(junction
-		(at 83.82 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9787aef6-b8f9-4ede-9c05-e680ea813bb2")
-	)
-	(junction
 		(at 130.81 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98cad3df-3e30-4d14-b1c6-7988a02347cd")
+	)
+	(junction
+		(at 88.9 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9da7ece7-f4b4-493e-8355-26c8177c8b9a")
 	)
 	(junction
 		(at 104.14 69.85)
@@ -1131,34 +1178,22 @@
 		(uuid "ada59fd3-8244-410f-ac0c-f0f31b22d885")
 	)
 	(junction
+		(at 142.24 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4bb2abe-e6f8-4fa4-8a3d-0474c262829d")
+	)
+	(junction
 		(at 52.07 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b62cbee2-19b2-4be7-aa4a-54b6bc6a888c")
 	)
 	(junction
-		(at 58.42 58.42)
+		(at 168.91 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bd5b1028-83ba-4473-9d93-307094b8cbf0")
-	)
-	(junction
-		(at 163.83 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8d3964a-491b-4b46-a1da-06f119e1da09")
-	)
-	(junction
-		(at 83.82 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cba597cd-d227-42e9-9386-64803270f16f")
-	)
-	(junction
-		(at 163.83 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0d07ebd-7f07-4060-8c21-a92c569f3948")
+		(uuid "bc4e7b8b-af32-49cf-99f5-8857e5e4c790")
 	)
 	(junction
 		(at 77.47 69.85)
@@ -1167,16 +1202,10 @@
 		(uuid "d144e775-ac3c-4886-95b7-521ae37f9378")
 	)
 	(junction
-		(at 137.16 81.28)
+		(at 88.9 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d4fe76f7-141d-452e-86b8-94dc205f7716")
-	)
-	(junction
-		(at 137.16 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dda80e17-bdab-42ee-a3eb-9af975be3f45")
+		(uuid "ed296ca4-fa78-4a3a-92ce-5d58cade3707")
 	)
 	(junction
 		(at 77.47 116.84)
@@ -1191,10 +1220,16 @@
 		(uuid "ee4ec98e-e775-4ea5-823f-f4461679daee")
 	)
 	(junction
-		(at 163.83 105.41)
+		(at 115.57 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f7c9d21f-cfd8-4c47-b451-5828c91bdc44")
+		(uuid "f2d131dd-1143-4440-9d49-60fa90060157")
+	)
+	(junction
+		(at 38.1 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f74de05a-e87b-446f-9aef-a6c2867d7870")
 	)
 	(junction
 		(at 52.07 116.84)
@@ -1236,33 +1271,23 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 58.42) (xy 58.42 81.28)
+			(xy 38.1 81.28) (xy 38.1 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "06dec818-170b-4929-a5e7-9ac04217d131")
+		(uuid "169c1d88-d5bd-48f4-8cfd-b36026c21854")
 	)
 	(wire
 		(pts
-			(xy 83.82 58.42) (xy 83.82 81.28)
+			(xy 88.9 81.28) (xy 88.9 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1322826f-7862-4c4c-8d4b-c355ed155485")
-	)
-	(wire
-		(pts
-			(xy 137.16 81.28) (xy 137.16 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1910adcd-6f92-484f-a333-ce48cf491262")
+		(uuid "1869cfe1-4b55-4b5b-a5d2-6eba21352587")
 	)
 	(wire
 		(pts
@@ -1336,6 +1361,26 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 58.42) (xy 168.91 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ef209a0-3116-4afb-9410-b1bd478746a7")
+	)
+	(wire
+		(pts
+			(xy 142.24 81.28) (xy 142.24 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334c3de3-a37d-48a2-85d7-6f1760ea4905")
+	)
+	(wire
+		(pts
 			(xy 157.48 81.28) (xy 157.48 85.09)
 		)
 		(stroke
@@ -1406,7 +1451,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 58.42) (xy 33.02 81.28)
+			(xy 38.1 49.53) (xy 38.1 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1436,6 +1481,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 58.42) (xy 115.57 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5be88a7c-c85f-4628-86a0-5dddacd9a2cb")
+	)
+	(wire
+		(pts
 			(xy 152.4 105.41) (xy 157.48 105.41)
 		)
 		(stroke
@@ -1446,23 +1501,23 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 49.53) (xy 58.42 58.42)
+			(xy 142.24 105.41) (xy 142.24 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d240e24-29f0-41ed-a557-46cf5c495af8")
+	)
+	(wire
+		(pts
+			(xy 63.5 49.53) (xy 63.5 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5faaed75-7f11-4881-891c-3de89ba1803c")
-	)
-	(wire
-		(pts
-			(xy 33.02 49.53) (xy 33.02 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60cfde2c-0ed8-4587-a20a-1528faa0cb6e")
 	)
 	(wire
 		(pts
@@ -1496,7 +1551,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 105.41) (xy 163.83 128.27)
+			(xy 168.91 49.53) (xy 168.91 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1506,13 +1561,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 58.42) (xy 137.16 81.28)
+			(xy 168.91 81.28) (xy 168.91 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "76ea7561-fce2-4310-bd67-e94d251e8d14")
+		(uuid "76ecde0e-e3f5-41de-b8bb-ba3736071e69")
 	)
 	(wire
 		(pts
@@ -1556,13 +1611,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 81.28) (xy 110.49 105.41)
+			(xy 115.57 49.53) (xy 115.57 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8b98a279-1865-4ff6-a891-c6a2185c76ad")
+	)
+	(wire
+		(pts
+			(xy 115.57 81.28) (xy 115.57 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d6cafc8-6f74-4b4c-8901-3fb716899cc1")
 	)
 	(wire
 		(pts
@@ -1586,7 +1651,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 81.28) (xy 83.82 105.41)
+			(xy 88.9 49.53) (xy 88.9 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1623,6 +1688,16 @@
 			(type default)
 		)
 		(uuid "9c425b4d-d439-489d-90b3-caaac9bfd9dd")
+	)
+	(wire
+		(pts
+			(xy 168.91 105.41) (xy 168.91 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9da9b874-dffd-4e01-85e2-6b6ab29bb2c8")
 	)
 	(wire
 		(pts
@@ -1676,16 +1751,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 105.41) (xy 137.16 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abc5389d-6b0d-44d9-a56b-a408fbd90717")
-	)
-	(wire
-		(pts
 			(xy 152.4 81.28) (xy 157.48 81.28)
 		)
 		(stroke
@@ -1696,13 +1761,13 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 49.53) (xy 83.82 58.42)
+			(xy 88.9 58.42) (xy 88.9 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad07cc7b-5506-47a1-abe8-bf7f1cd633eb")
+		(uuid "ad71a164-97c7-4877-8ef8-a449ad656d70")
 	)
 	(wire
 		(pts
@@ -1736,16 +1801,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 81.28) (xy 163.83 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b43c8dfc-4f78-443f-9bfe-08a471cbce31")
-	)
-	(wire
-		(pts
 			(xy 27.94 116.84) (xy 52.07 116.84)
 		)
 		(stroke
@@ -1753,6 +1808,16 @@
 			(type default)
 		)
 		(uuid "b469e928-dc8d-4e7a-95e0-e5d93c9e7222")
+	)
+	(wire
+		(pts
+			(xy 142.24 58.42) (xy 142.24 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b76471ac-8b8a-4330-a9ae-8d55f14ff749")
 	)
 	(wire
 		(pts
@@ -1796,6 +1861,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 105.41) (xy 115.57 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bda742e8-98c0-4c97-9e8b-3ecd94c8f819")
+	)
+	(wire
+		(pts
 			(xy 52.07 105.41) (xy 52.07 109.22)
 		)
 		(stroke
@@ -1816,13 +1891,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 49.53) (xy 110.49 58.42)
+			(xy 63.5 81.28) (xy 63.5 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c1c1fa13-b99f-4306-84a4-2892fa044898")
+		(uuid "c4833156-0756-4754-adc8-162fabaa8371")
 	)
 	(wire
 		(pts
@@ -1833,16 +1908,6 @@
 			(type default)
 		)
 		(uuid "cd5f6ccd-f4a8-40e9-9d12-696a7d783f7e")
-	)
-	(wire
-		(pts
-			(xy 163.83 49.53) (xy 163.83 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd96ef8e-ec58-4f6c-a1d6-57ee0d3c1ec9")
 	)
 	(wire
 		(pts
@@ -1906,7 +1971,17 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 49.53) (xy 137.16 58.42)
+			(xy 63.5 58.42) (xy 63.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9fcc279-5776-44da-9aee-c3427c5dc0ce")
+	)
+	(wire
+		(pts
+			(xy 142.24 49.53) (xy 142.24 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1926,13 +2001,13 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 105.41) (xy 110.49 128.27)
+			(xy 38.1 58.42) (xy 38.1 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e876fc0e-95ca-46d3-b34b-418fa291cd16")
+		(uuid "e6f37f88-e868-475e-8ce1-3d117a1b2b7c")
 	)
 	(wire
 		(pts
@@ -1953,26 +2028,6 @@
 			(type default)
 		)
 		(uuid "ea5eff68-e352-45aa-9aef-689b5e75fdf0")
-	)
-	(wire
-		(pts
-			(xy 33.02 81.28) (xy 33.02 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eab2f2fb-b57c-43fa-9d5e-e2a1dea3a303")
-	)
-	(wire
-		(pts
-			(xy 163.83 58.42) (xy 163.83 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eac7e5dd-6918-4d39-aa7b-37b8ba9f8531")
 	)
 	(wire
 		(pts
@@ -2006,26 +2061,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 81.28) (xy 58.42 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f250305f-dbda-4cfa-817e-2b68d031a23a")
-	)
-	(wire
-		(pts
-			(xy 110.49 58.42) (xy 110.49 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2af5f89-6e4e-4e1e-9f18-739e2ae55cab")
-	)
-	(wire
-		(pts
 			(xy 125.73 81.28) (xy 130.81 81.28)
 		)
 		(stroke
@@ -2056,7 +2091,7 @@
 	)
 	(global_label "COL1"
 		(shape input)
-		(at 58.42 49.53 90)
+		(at 63.5 49.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2066,7 +2101,7 @@
 		)
 		(uuid "0368695a-2dd5-4c1d-b7a3-a6637e3173b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.42 41.7067 90)
+			(at 63.5 41.7067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2144,7 +2179,7 @@
 	)
 	(global_label "COL2"
 		(shape input)
-		(at 83.82 49.53 90)
+		(at 88.9 49.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2154,7 +2189,7 @@
 		)
 		(uuid "1d8cd14d-4899-46cf-8e68-97394e501453")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.82 41.7067 90)
+			(at 88.9 41.7067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2430,7 +2465,7 @@
 	)
 	(global_label "COL0"
 		(shape input)
-		(at 33.02 49.53 90)
+		(at 38.1 49.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2440,7 +2475,7 @@
 		)
 		(uuid "a5c423f3-d283-4269-9b0c-58b4a52a92bc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.02 41.7067 90)
+			(at 38.1 41.7067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,7 +2487,7 @@
 	)
 	(global_label "COL4"
 		(shape input)
-		(at 137.16 49.53 90)
+		(at 142.24 49.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2462,7 +2497,7 @@
 		)
 		(uuid "afa58c59-f9d2-4378-afce-434fce5584f5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.16 41.7067 90)
+			(at 142.24 41.7067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,7 +2531,7 @@
 	)
 	(global_label "COL5"
 		(shape input)
-		(at 163.83 49.53 90)
+		(at 168.91 49.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2506,7 +2541,7 @@
 		)
 		(uuid "c8df0725-ee7a-4898-9f46-a97f33508f9f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.83 41.7067 90)
+			(at 168.91 41.7067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2553,7 @@
 	)
 	(global_label "COL3"
 		(shape input)
-		(at 110.49 49.53 90)
+		(at 115.57 49.53 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2528,7 +2563,7 @@
 		)
 		(uuid "c9113fb8-5cfc-4f61-a535-46124c803e2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.49 41.7067 90)
+			(at 115.57 41.7067 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2759,33 +2794,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 144.78 58.42 0)
+		(lib_id "Switch:SW_Push")
+		(at 93.98 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0495011e-8e59-49e2-bd5c-c7a33e0be07a")
-		(property "Reference" "SW5"
-			(at 144.78 50.8 0)
+		(uuid "0751b85c-d48e-430d-8b00-cbca74eacc1b")
+		(property "Reference" "SW9"
+			(at 93.98 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 144.78 53.34 0)
+		(property "Value" "SW_Push"
+			(at 93.98 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 144.78 58.42 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 93.98 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2793,16 +2828,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 144.78 58.42 0)
+		(property "Datasheet" "~"
+			(at 93.98 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 144.78 58.42 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 93.98 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2811,15 +2847,355 @@
 			)
 		)
 		(pin "2"
-			(uuid "c6ac8c33-a0b5-4d98-b25e-89aadfbbd32e")
+			(uuid "00b87325-0c3c-462b-9fa0-9eb939e2d347")
 		)
 		(pin "1"
-			(uuid "a8beb9f2-2d67-4752-b46c-7473217d9853")
+			(uuid "aba5a4f5-2ec3-4fb8-8c41-7f8a9b7f9216")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 173.99 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07c2c6c0-ae19-489f-bfcb-2f4c96a70395")
+		(property "Reference" "SW6"
+			(at 173.99 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 173.99 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aefde064-fa52-4b86-8807-edf88bb4fffb")
+		)
+		(pin "1"
+			(uuid "510a185b-a2b8-435e-ba55-1249439256c2")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ab2177e-1e7b-423b-8e65-50bd96788231")
+		(property "Reference" "SW5"
+			(at 147.32 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 147.32 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81baee91-52be-4de5-b9e3-8dc8dd7ab8e4")
+		)
+		(pin "1"
+			(uuid "ac93e18b-74a7-4d2d-886b-9edb14dd23d2")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 120.65 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ae6fca2-8fe5-4e4e-b5a9-5f90fff47db3")
+		(property "Reference" "SW16"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 120.65 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f79f5fcb-7d38-4ef0-8930-de757e7d2bc6")
+		)
+		(pin "1"
+			(uuid "062d4023-c56d-4661-9a1d-cc8d4f241d20")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 147.32 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "180c239c-c287-4210-8c8d-37c1e2443b7e")
+		(property "Reference" "SW17"
+			(at 147.32 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "55a08b51-d94b-409b-b9dc-0a5cf9370a4c")
+		)
+		(pin "1"
+			(uuid "928a62c5-68d8-425c-a7a6-6ce24d934f13")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 120.65 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24fe36cb-28f4-4678-a9d0-cbda16a72c34")
+		(property "Reference" "SW10"
+			(at 120.65 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 120.65 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 120.65 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 120.65 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "66abcfda-5593-45e6-9305-3f1f110acfb0")
+		)
+		(pin "1"
+			(uuid "85afd527-6ae5-466d-b1e8-193d09824a78")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -2914,33 +3290,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 66.04 81.28 0)
+		(lib_id "Switch:SW_Push")
+		(at 173.99 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "26c27b7e-7f91-4f9d-be43-652bf643abec")
-		(property "Reference" "SW8"
-			(at 66.04 73.66 0)
+		(uuid "276868a2-7dd2-4939-b2ea-71f552e141e7")
+		(property "Reference" "SW12"
+			(at 173.99 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 66.04 76.2 0)
+		(property "Value" "SW_Push"
+			(at 173.99 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 66.04 81.28 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 173.99 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2948,16 +3324,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 66.04 81.28 0)
+		(property "Datasheet" "~"
+			(at 173.99 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 66.04 81.28 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 173.99 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2966,82 +3343,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "3c19f723-1758-49a7-a119-c5a07b432adc")
+			(uuid "0a7dab1c-fc81-433b-a5d2-64c11176b70f")
 		)
 		(pin "1"
-			(uuid "b4d94db3-7638-4f0e-97ff-afa1c9bda885")
+			(uuid "dc4d0f23-7b01-4e3b-aea1-fb01cd77b6a1")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 118.11 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "274489b0-de93-4209-bdfc-b33ab968c4cd")
-		(property "Reference" "SW10"
-			(at 118.11 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 118.11 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e2e348fc-f7dd-43be-a88c-309d6391f4c7")
-		)
-		(pin "1"
-			(uuid "cb7015bb-c217-40ab-8e78-98f2735c00bd")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW10")
+					(reference "SW12")
 					(unit 1)
 				)
 			)
@@ -3312,73 +3622,6 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 171.45 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f1fbb96-aade-4991-aed5-366d50bc4d35")
-		(property "Reference" "SW12"
-			(at 171.45 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 171.45 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 171.45 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "818659f9-3e69-4919-815c-5dbfbd41c555")
-		)
-		(pin "1"
-			(uuid "5980b7c7-7c63-44c9-92d8-71a89e58a43e")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 157.48 88.9 90)
 		(unit 1)
@@ -3555,6 +3798,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 173.99 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "487fc9a9-3fc3-46b5-be7d-69a0ae5602e6")
+		(property "Reference" "SW18"
+			(at 173.99 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 173.99 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c5444639-1889-4945-bc06-f78460261010")
+		)
+		(pin "1"
+			(uuid "046170c3-96c4-4ce6-9364-d06a2126d59a")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 130.81 66.04 90)
 		(unit 1)
@@ -3643,33 +3954,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 171.45 105.41 0)
+		(lib_id "Switch:SW_Push")
+		(at 43.18 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4a4eb664-8135-49d2-8603-2c4905a60ce2")
-		(property "Reference" "SW18"
-			(at 171.45 97.79 0)
+		(uuid "516584e6-7d91-4914-a74d-0a2e569acf1e")
+		(property "Reference" "SW1"
+			(at 43.18 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 171.45 100.33 0)
+		(property "Value" "SW_Push"
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 171.45 105.41 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,16 +3988,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 171.45 105.41 0)
+		(property "Datasheet" "~"
+			(at 43.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 171.45 105.41 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 43.18 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3695,48 +4007,48 @@
 			)
 		)
 		(pin "2"
-			(uuid "a401490b-6ee0-4ea6-8ae3-4b2f1c0acbc6")
+			(uuid "a4525192-b6ad-450f-8a10-1eed1c6c189a")
 		)
 		(pin "1"
-			(uuid "5035354b-c813-4da3-b2ca-b7a2046f3080")
+			(uuid "c031941d-3e10-4c4d-98e7-5b0b4c23ca00")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW18")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 118.11 105.41 0)
+		(lib_id "Switch:SW_Push")
+		(at 68.58 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5082b111-3694-4337-a449-e2c0f4f9b91f")
-		(property "Reference" "SW16"
-			(at 118.11 97.79 0)
+		(uuid "6646d9ae-933b-4c38-9069-4f457e691425")
+		(property "Reference" "SW14"
+			(at 68.58 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 118.11 100.33 0)
+		(property "Value" "SW_Push"
+			(at 68.58 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 118.11 105.41 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 68.58 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,16 +4056,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 118.11 105.41 0)
+		(property "Datasheet" "~"
+			(at 68.58 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 118.11 105.41 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 68.58 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3762,216 +4075,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "ce99a026-dde6-4477-8659-f97829fd5f4a")
+			(uuid "6b661ea2-e201-4f12-b583-cf38f24a18f3")
 		)
 		(pin "1"
-			(uuid "8d18b791-d5f7-45a9-a7e8-336c82f58433")
+			(uuid "9bb46962-455c-4402-9bee-f8d7c0fb879a")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 118.11 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5fee74c6-50d2-4e17-9c11-a28accd11f00")
-		(property "Reference" "SW4"
-			(at 118.11 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 118.11 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 118.11 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dc69373f-0ea0-45f4-b539-097fcff1e09a")
-		)
-		(pin "1"
-			(uuid "129e6833-a8a7-4ac7-9222-f16556b7f7ac")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 171.45 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60b2964e-c939-462c-b2ed-5a7928a9adc7")
-		(property "Reference" "SW21"
-			(at 171.45 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 171.45 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 171.45 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0f3483d4-b9e5-482e-a13f-ed86e95e5cd2")
-		)
-		(pin "1"
-			(uuid "6d89ea28-7a32-4d8a-8200-d317271248e9")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 144.78 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "634cb6e3-f996-431c-a99d-14008837bff2")
-		(property "Reference" "SW11"
-			(at 144.78 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 144.78 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7c462a72-039b-40f7-8274-7712c03c1ba9")
-		)
-		(pin "1"
-			(uuid "8154b48e-a832-4cc4-a1af-bd14258bbd03")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW11")
+					(reference "SW14")
 					(unit 1)
 				)
 			)
@@ -4242,33 +4354,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 118.11 128.27 0)
+		(lib_id "Switch:SW_Push")
+		(at 147.32 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "76744465-a50f-4ee4-9daa-41a1d7b000fa")
-		(property "Reference" "SW19"
-			(at 118.11 120.65 0)
+		(uuid "730d6f8f-d7f9-4420-9d11-eb8fd995e152")
+		(property "Reference" "SW11"
+			(at 147.32 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 118.11 123.19 0)
+		(property "Value" "SW_Push"
+			(at 147.32 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 118.11 128.27 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 147.32 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,16 +4388,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 118.11 128.27 0)
+		(property "Datasheet" "~"
+			(at 147.32 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 118.11 128.27 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4294,15 +4407,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "6ef483dc-f88b-41cf-bef6-5c1672c31951")
+			(uuid "c409d010-f087-4d57-b674-cbbe383a1580")
 		)
 		(pin "1"
-			(uuid "14448cb0-d711-474a-9031-53d8488d6a13")
+			(uuid "00db316c-9395-4af9-a8e3-3f547945f9b8")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW19")
+					(reference "SW11")
 					(unit 1)
 				)
 			)
@@ -4397,73 +4510,6 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 144.78 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e591145-bff4-44ab-a1b3-db40e5b9340b")
-		(property "Reference" "SW20"
-			(at 144.78 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 144.78 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 144.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "242dc588-179d-4d1d-b798-7ca8ebf48308")
-		)
-		(pin "1"
-			(uuid "be255033-0967-4cf2-aad2-7aea2c59fe60")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 104.14 88.9 90)
 		(unit 1)
@@ -4552,33 +4598,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 91.44 58.42 0)
+		(lib_id "Switch:SW_Push")
+		(at 43.18 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8d12ed3b-ba30-41d2-98b2-5c7592033568")
-		(property "Reference" "SW3"
-			(at 91.44 50.8 0)
+		(uuid "8a0b655b-1f56-444f-925c-1362ce8d51b3")
+		(property "Reference" "SW13"
+			(at 43.18 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 91.44 53.34 0)
+		(property "Value" "SW_Push"
+			(at 43.18 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 91.44 58.42 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 43.18 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4586,16 +4632,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 91.44 58.42 0)
+		(property "Datasheet" "~"
+			(at 43.18 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 91.44 58.42 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 43.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4604,15 +4651,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "f6c10f29-293e-4c44-a010-c0c226a9b227")
+			(uuid "606d8179-1f41-465c-a743-bd61a632f640")
 		)
 		(pin "1"
-			(uuid "a23d13cc-ab99-4fd5-8607-340ed5cdd545")
+			(uuid "55e0409d-ec1c-41df-8b01-2123e2ee57ac")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW3")
+					(reference "SW13")
 					(unit 1)
 				)
 			)
@@ -4707,33 +4754,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 91.44 105.41 0)
+		(lib_id "Switch:SW_Push")
+		(at 173.99 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "92abdace-312a-4843-8f44-ac798c9eadf5")
-		(property "Reference" "SW15"
-			(at 91.44 97.79 0)
+		(uuid "8e4b45d6-0494-42cc-b21c-1e5abaf6be41")
+		(property "Reference" "SW21"
+			(at 173.99 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 91.44 100.33 0)
+		(property "Value" "SW_Push"
+			(at 173.99 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 91.44 105.41 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 173.99 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,16 +4788,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 91.44 105.41 0)
+		(property "Datasheet" "~"
+			(at 173.99 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 91.44 105.41 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 173.99 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4759,10 +4807,146 @@
 			)
 		)
 		(pin "2"
-			(uuid "02850468-827b-41a2-86a9-8d1d22a8ea74")
+			(uuid "521b3db1-058e-4d31-9be3-cc8a91639529")
 		)
 		(pin "1"
-			(uuid "7845def4-b984-4b6a-b98d-7c08ff609589")
+			(uuid "bf5775c6-d9f8-403c-9f9a-ecb3453bb373")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 120.65 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "907f5e4a-4238-4479-8aaa-7f4791fef492")
+		(property "Reference" "SW4"
+			(at 120.65 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 120.65 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "474ce5a9-40b4-47c1-bba0-4e0961fb8565")
+		)
+		(pin "1"
+			(uuid "675710c9-0d5f-43ed-99bf-80b44005f9a1")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 93.98 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a7ab3b4-8262-4ee5-b536-a8150ad86925")
+		(property "Reference" "SW15"
+			(at 93.98 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 93.98 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 93.98 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 93.98 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf540949-dbfb-47fe-bb01-e95b3e33a7b6")
+		)
+		(pin "1"
+			(uuid "70745ceb-159a-4145-8ce4-388172eada88")
 		)
 		(instances
 			(project "thock42"
@@ -4774,33 +4958,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 40.64 105.41 0)
+		(lib_id "Switch:SW_Push")
+		(at 43.18 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "98c2093b-326d-4e21-a703-9ea4c18875e6")
-		(property "Reference" "SW13"
-			(at 40.64 97.79 0)
+		(uuid "9da0c9d8-65c7-4572-96e9-58acf38788e5")
+		(property "Reference" "SW7"
+			(at 43.18 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 40.64 100.33 0)
+		(property "Value" "SW_Push"
+			(at 43.18 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 40.64 105.41 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 43.18 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4808,16 +4992,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 40.64 105.41 0)
+		(property "Datasheet" "~"
+			(at 43.18 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 40.64 105.41 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 43.18 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4826,15 +5011,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "c5b82b53-6a6d-4902-b809-37c5282f1f02")
+			(uuid "1fb1721b-9046-4325-8de2-8766480e7e26")
 		)
 		(pin "1"
-			(uuid "dfeb734a-bf78-4d4e-a3d5-0a552cbd7ca8")
+			(uuid "9d6e4d17-fb95-40f1-8e6b-ceb819b2e376")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW13")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
@@ -4929,33 +5114,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 66.04 58.42 0)
+		(lib_id "Switch:SW_Push")
+		(at 68.58 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b218dbbf-481e-43bc-a3e7-bb358012f64c")
-		(property "Reference" "SW2"
-			(at 66.04 50.8 0)
+		(uuid "a7fc6bf5-371c-4b27-aa3d-d9ef67f9bdf9")
+		(property "Reference" "SW8"
+			(at 68.58 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 66.04 53.34 0)
+		(property "Value" "SW_Push"
+			(at 68.58 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 66.04 58.42 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 68.58 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4963,16 +5148,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 66.04 58.42 0)
+		(property "Datasheet" "~"
+			(at 68.58 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 66.04 58.42 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 68.58 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4981,10 +5167,78 @@
 			)
 		)
 		(pin "2"
-			(uuid "61201cc4-c778-4d15-8985-dcc7b8f92e74")
+			(uuid "b6662895-737f-4ace-93cd-aa2aafd6fe06")
 		)
 		(pin "1"
-			(uuid "f6a2a0fb-2c46-4580-9c83-2fb9124b1ebf")
+			(uuid "60e38f1d-76ce-402a-b633-865d80482290")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 68.58 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aaf29f7f-23dc-461c-b09a-351bb7858ac1")
+		(property "Reference" "SW2"
+			(at 68.58 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 68.58 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "41630851-972b-4ccf-a300-9d4a09e9a31d")
+		)
+		(pin "1"
+			(uuid "c993c19c-a8f5-4ce7-a964-6292c7a67311")
 		)
 		(instances
 			(project "thock42"
@@ -4996,33 +5250,33 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 66.04 105.41 0)
+		(lib_id "Switch:SW_Push")
+		(at 147.32 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8dd9791-35d5-4b50-82fc-0752f1fb9b39")
-		(property "Reference" "SW14"
-			(at 66.04 97.79 0)
+		(uuid "b3a2eb2b-50ae-4e45-93d7-6a09e38be6fd")
+		(property "Reference" "SW20"
+			(at 147.32 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_PUSH"
-			(at 66.04 100.33 0)
+		(property "Value" "SW_Push"
+			(at 147.32 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 66.04 105.41 0)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 147.32 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5030,16 +5284,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 66.04 105.41 0)
+		(property "Datasheet" "~"
+			(at 147.32 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 66.04 105.41 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 147.32 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5048,22 +5303,90 @@
 			)
 		)
 		(pin "2"
-			(uuid "f4eb4ba7-7b42-4bf3-be39-dcf35ac0436f")
+			(uuid "00fef780-3f02-486c-bd00-d1ac92f01c86")
 		)
 		(pin "1"
-			(uuid "946409a7-48f3-4704-96d9-ea186d62926e")
+			(uuid "779628de-562b-4c39-9056-e4b162a691cc")
 		)
 		(instances
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW14")
+					(reference "SW20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "display_kleeb:OLED-128x32")
+		(lib_id "Switch:SW_Push")
+		(at 93.98 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c20e50df-5089-495a-8e10-d0ac47699af3")
+		(property "Reference" "SW3"
+			(at 93.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "16441a54-c1b3-489a-bcd8-9dfa7f814a8c")
+		)
+		(pin "1"
+			(uuid "265bc436-78d7-4cf1-8138-a4ae1ccad768")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "thock42:OLED-128x32")
 		(at 240.03 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5090,7 +5413,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "display_kleeb:OLED-128x32-double-sided"
+		(property "Footprint" "thock42:OLED-128x32-double-sided"
 			(at 240.03 95.25 0)
 			(effects
 				(font
@@ -5133,6 +5456,74 @@
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 120.65 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf20b6c8-bc2f-455e-b97f-1a0c4c07a5c7")
+		(property "Reference" "SW19"
+			(at 120.65 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "thock42:pg1350-RH_silkscreen"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 120.65 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ecf17e7-39ec-41b3-8cde-168a511c01bb")
+		)
+		(pin "1"
+			(uuid "5eafd41e-9899-420c-b62f-69f83fde97d1")
+		)
+		(instances
+			(project "thock42"
+				(path "/0467994f-409b-4faa-972c-460935ac1649"
+					(reference "SW19")
 					(unit 1)
 				)
 			)
@@ -5491,73 +5882,6 @@
 		)
 	)
 	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 171.45 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db6beac9-8fd4-4425-a355-865ee2645cb8")
-		(property "Reference" "SW6"
-			(at 171.45 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 171.45 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 171.45 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0eb88146-8053-40bf-9a6a-a4f0fe594b2c")
-		)
-		(pin "1"
-			(uuid "ee731738-de6d-4de3-8336-0c76e532aad8")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 240.03 127 0)
 		(unit 1)
@@ -5585,7 +5909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-A_1x03_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal"
 			(at 240.03 127 0)
 			(effects
 				(font
@@ -5625,207 +5949,6 @@
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "JST_3PIN1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 91.44 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de26176e-a3cc-4451-b5bd-5b0274236783")
-		(property "Reference" "SW9"
-			(at 91.44 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 91.44 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 91.44 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 91.44 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5ead13cd-89b6-4899-ae61-c263d31d6440")
-		)
-		(pin "1"
-			(uuid "65679017-42bc-4e26-8cba-b4f137b639aa")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 40.64 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e55070d0-d692-486d-ba61-acdb494e2cfb")
-		(property "Reference" "SW1"
-			(at 40.64 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 40.64 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 40.64 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 40.64 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b47366af-0088-4dbc-b4c8-7b09ec65c5cd")
-		)
-		(pin "1"
-			(uuid "2a2ef2ce-7b35-4a1a-835d-de1e7593f776")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 144.78 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e77be478-891f-47fb-91b1-cd3bd38416d6")
-		(property "Reference" "SW17"
-			(at 144.78 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 144.78 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 144.78 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4c1496a7-659a-40e6-b8db-37d9083b587b")
-		)
-		(pin "1"
-			(uuid "c39baa62-2284-416a-a273-2bc62de9072e")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW17")
 					(unit 1)
 				)
 			)
@@ -6008,7 +6131,7 @@
 		)
 	)
 	(symbol
-		(lib_id "mcu_kleeb:rp2040-zero")
+		(lib_id "thock42:rp2040-zero_nobtm")
 		(at 245.11 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6033,7 +6156,7 @@
 				)
 			)
 		)
-		(property "Footprint" "mcu_kleeb:rp2040-zero-tht_nobtm_reversible"
+		(property "Footprint" "thock42:rp2040-zero-tht_nobtm_reversible"
 			(at 236.22 57.15 0)
 			(effects
 				(font
@@ -6118,73 +6241,6 @@
 			(project "thock42"
 				(path "/0467994f-409b-4faa-972c-460935ac1649"
 					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "kbd:SW_PUSH")
-		(at 40.64 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9bc7171-def6-4571-a5f6-f6e24dfd2793")
-		(property "Reference" "SW7"
-			(at 40.64 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_PUSH"
-			(at 40.64 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "pg1350:pg1350-RH_silkscreen"
-			(at 40.64 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 40.64 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "80d5bda0-d97e-40a6-b628-18bc9534d162")
-		)
-		(pin "1"
-			(uuid "d73fc1e1-0770-4d4e-8d8e-bc95c6247416")
-		)
-		(instances
-			(project "thock42"
-				(path "/0467994f-409b-4faa-972c-460935ac1649"
-					(reference "SW7")
 					(unit 1)
 				)
 			)
