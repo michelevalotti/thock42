@@ -928,4 +928,15 @@
 		(layers "B.Cu" "B.Mask")
 		(uuid "bf30071a-7867-4d54-9b06-3b9ec7b67408")
 	)
+	(model "/home/michele/Documents/keycap.step"
+		(offset
+			(xyz -8.25 -8.25 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
