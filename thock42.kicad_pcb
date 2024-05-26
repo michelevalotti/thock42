@@ -19111,7 +19111,7 @@
 		)
 		(fp_arc
 			(start -2.448959 -7.624479)
-			(mid -2.2 -8.225519)
+			(mid -2.2 -8.22552)
 			(end -1.598959 -8.474481)
 			(stroke
 				(width 0.12)
@@ -19366,7 +19366,7 @@
 		)
 		(fp_arc
 			(start -2.65 -7.700001)
-			(mid -3.350397 -6.672891)
+			(mid -3.350397 -6.67289)
 			(end -4.528858 -6.276988)
 			(stroke
 				(width 0.12)
@@ -19608,7 +19608,7 @@
 		)
 		(fp_arc
 			(start -6.9 -5.9)
-			(mid -6.607107 -6.607107)
+			(mid -6.607107 -6.607108)
 			(end -5.9 -6.9)
 			(stroke
 				(width 0.15)
@@ -19630,7 +19630,7 @@
 		)
 		(fp_arc
 			(start -5.9 6.9)
-			(mid -6.607107 6.607107)
+			(mid -6.607108 6.607107)
 			(end -6.9 5.9)
 			(stroke
 				(width 0.15)
@@ -21203,7 +21203,7 @@
 	(footprint "MountingHole:MountingHole_2.2mm_M2"
 		(layer "F.Cu")
 		(uuid "955f7579-6d65-4167-8bb7-7f6d61168cb1")
-		(at 159.5 81.5)
+		(at 159.89 81.5)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "REF**"
@@ -31890,7 +31890,7 @@
 			(uuid "304769dc-d467-4718-b31a-81e3d69d02bc")
 		)
 		(fp_line
-			(start -6.000001 7.699998)
+			(start -6.000001 7.699997)
 			(end -7.700002 7.7)
 			(stroke
 				(width 0.12)
@@ -32209,7 +32209,7 @@
 		)
 		(fp_arc
 			(start -2.65 -7.7)
-			(mid -3.350399 -6.672893)
+			(mid -3.350399 -6.672894)
 			(end -4.528858 -6.276988)
 			(stroke
 				(width 0.12)
@@ -32241,7 +32241,7 @@
 		)
 		(fp_line
 			(start 8 8.5)
-			(end -8.000002 8.5)
+			(end -8.000003 8.5)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -32251,7 +32251,7 @@
 		)
 		(fp_line
 			(start -8 -8.5)
-			(end 8.000002 -8.5)
+			(end 8.000003 -8.5)
 			(stroke
 				(width 0.15)
 				(type solid)
@@ -32270,8 +32270,8 @@
 			(uuid "3ab4beab-580e-4aab-abd9-fbf37be0f8eb")
 		)
 		(fp_arc
-			(start 8.000002 -8.5)
-			(mid 8.707107 -8.207106)
+			(start 8.000003 -8.5)
+			(mid 8.707108 -8.207106)
 			(end 9 -7.5)
 			(stroke
 				(width 0.15)
@@ -32303,7 +32303,7 @@
 			(uuid "3ca2abd2-5667-47a1-bb73-f656265572bf")
 		)
 		(fp_arc
-			(start -8.000002 8.5)
+			(start -8.000003 8.5)
 			(mid -8.707107 8.207107)
 			(end -9 7.5)
 			(stroke
